@@ -2,9 +2,10 @@ import axios from 'axios';
 import type { Product, CreateProductInput, UpdateProductInput } from '../types/Product';
 
 const API_URL = 'http://localhost:3000/api';
+const HOSTED_SERVER_URL = 'https://product-store-g4t7.onrender.com/api';
 
 const apiClient = axios.create({
-  baseURL: API_URL,
+  baseURL: HOSTED_SERVER_URL,
   headers: {
     'Content-Type': 'application/json',
   },

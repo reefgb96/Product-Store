@@ -8,7 +8,7 @@ import { handleServiceError } from "./services/errorService";
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.use(cors());
+app.use(cors({ origin: "https://reefgb96.github.io/Product-Store" }));
 app.use(express.json());
 
 app.use("/api", productRoutes);
